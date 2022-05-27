@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mudando a Cor</title>
+
+<style type="text/css">
+	body {
+	font-size: 35px;
+}
+/* Treino de JS DOM */
+button {
+	font-size: 25px;
+	font-family: bold;
+	color: green;
+	border-style: solid;
+	border-color: gold;
+}
+p {
+	background-color: white;
+
+	border-style: solid;
+	border-color: gold;
+}
+
+#button2 {
+	color: white;
+	background-color: black;
+}
+
+#para2 {
+	color: gray;
+	width: 600px;
+	color: white;
+	background-color: black;
+}
+</style>
+	<script type="text/javascript">
+		function mudaCor(novaCor) {
+			var elemento = document.getElementById("para1");
+			elemento.style.color = novaCor;
+			} 
+	</script>
+
+	<script type="text/javascript">
+			function mudaBackground(novoBack) {
+			var background = document.getElementById("para2");
+			background.style.backgroundColor = "blue";
+ 			}
+	</script>
+
+	<script type="text/javascript">
+			function mudaBackground2(novoBack) {
+			var background = document.getElementById("para2");
+			background.style.backgroundColor = "red";
+ 			}
+	</script>
+
+
+	<script type="text/javascript">
+			function mudaBackground3(novoBack) {
+			var background = document.getElementById("para2");
+			background.style.backgroundColor = "purple";
+ 			}
+	</script>
+
+</head>
+<body>
+
+	<p id="para1">Mudando a cor das <b>letras</b>, conforme aperta o botão abaixo</p>
+	<button onclick="mudaCor('blue')">Azul</button>
+	<button onclick="mudaCor('red')">Vermelho</button>
+	<button onclick="mudaCor('purple')">Roxo</button>
+
+
+	<p id="para2">Mudando a cor do <b>fundo</b>, conforme aperta o botão abaixo</p>
+
+	<button id="button2" onclick="mudaBackground('blue')">Azul</button>
+	<button id="button2" onclick="mudaBackground2('red')">Vermelho</button>
+	<button id="button2" onclick="mudaBackground3('purple')">Roxo</button>
+</body>
+</html>
